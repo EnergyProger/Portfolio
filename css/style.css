@@ -12,19 +12,22 @@ body{
   background: #f9f9ff;
 }
 .container{
-    width: 1240px;
+    width: 1440px;
     margin: 0 auto;
     
 }
 .header{
     background: linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-    height: 90vh;
+    height: 80vh;
 }
 .header__menu{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    align-items: center;
+   
+   
+    
 
 }
 .header__logo span a{
@@ -49,12 +52,79 @@ body{
 }
 
 .header__content{
+    position: relative;
     width: 100%;
-    height: 100vh;
     background: #fff;
     margin-top: 100px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
+}
+.header__content__photo{
+    width: 50%;
+}
+.header__content__info{
+    width: 50%;
+    
+}
+
+.header__content__info h6{
+    margin-top: 18%;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    font-weight: normal;
+    margin-bottom: 12px;
+    color: #222222;
+}
+.header__content__info h3{
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #222222;
+}
+.header__content__info .content__fio li{
+    list-style-type: none;
+    margin-top: 15px;
+}
+.header__content__info .content__fio li i{
+    font-size: 20px;
+    color: #766dff;
+}
+.header__content__info .content__social{
+    margin-top: 30px;
+    display: flex;
+}
+.header__content__info .content__social li{
+    list-style-type: none;
+    margin-right: 10px;
+}
+.header__content__info .content__social li a{
+    text-decoration: none;
+}
+.header__content__info .content__social li a i{
+    font-size: 30px;
+    color: #a09c9c;
+}
+.header__content__info .content__social li a i.fa-facebook-square:hover{
+    color: #1877f2;
+}
+.header__content__info .content__social li a i.fa-instagram:hover{
+    color: #e1306c;
+    
+}
+.header__content__info .content__social li a i.fa-telegram:hover{
+    color: #0088cc;
+}
+.header__content__info .content__social li a i.fa-github:hover{
+    color: #333;
 }
 
 .header__content__photo img{
-    width: 100%;
+    width: 80%;
+    height: 95%;
+    padding: 20px;
+    border-radius: 30px;
+    
 }
