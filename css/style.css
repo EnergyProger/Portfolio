@@ -1,15 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700");
 *{
     margin: 0;
     padding: 0;
 
 }
-
+body{
+    font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: #777777; 
+  background: #f9f9ff;
+}
 .container{
     width: 1240px;
     margin: 0 auto;
-    background: red;
+    
 }
-
+.header{
+    background: linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    height: 90vh;
+}
 .header__menu{
     display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    align-items: center;
+
+}
+.header__logo span a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.header__link ul{
+    display: flex;
+}
+.header__link ul li{
+    margin-left: 20px;
+    list-style-type: none;
+}
+.header__link ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.header__content{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    margin-top: 100px;
+}
+
+.header__content__photo img{
+    width: 100%;
 }
