@@ -26,8 +26,8 @@ body{
     justify-content: space-between;
     padding-top: 40px;
    
-   
-    
+
+
 
 }
 .header__logo span a{
@@ -36,6 +36,10 @@ body{
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
+    transition: all .5s ease;
+}
+.header__logo span a:hover{
+    color: rgb(207, 255, 179);
 }
 .header__link ul{
     display: flex;
@@ -49,8 +53,13 @@ body{
     color: #fff;
     font-weight: 500;
     text-transform: uppercase;
+    transition: all .5s ease;
+    
 }
-
+.header__link ul li a:hover{
+    color: #FFFDD0;	
+    text-decoration: underline;
+}
 .header__content{
     position: relative;
     width: 100%;
@@ -122,9 +131,134 @@ body{
 }
 
 .header__content__photo img{
-    width: 80%;
-    height: 95%;
+    width: 80%; /*80%*/
+    height: 95%; /*95%*/
     padding: 20px;
     border-radius: 30px;
     
 }
+
+.content__portfolio{
+    margin-top: 230px;
+}
+
+.content__portfolio__title h2{
+   
+    text-align: center;
+    font-family: "Heebo", sans-serif;
+    font-size: 36px;
+    color: #222;
+    text-transform: uppercase;
+}
+.content__portfolio__projects{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.project__block{
+    width: 30%;
+    text-align: center;
+    margin-top: 20px;
+}
+.project__block img{
+    width: 100%;
+    border-radius: 12px;
+}
+.project__block h2{
+    margin-top: 8px;
+    font-family: "Heebo", sans-serif;
+    color: #222;
+}
+
+.footer{
+    width: 100%;
+    background: #000;
+    margin-top: 50px;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__content__info{
+    width: 60%;
+}
+.footer__content__info h3{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Heebo", sans-serif;
+    padding-top: 50px;
+    margin-bottom: 15px;
+}
+.footer__content__info p{
+    width: 100%;
+    padding-bottom: 50px;
+    color: #777;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.footer__content__social{
+    width: 30%;
+}
+.footer__content__social h3{
+    color: #fff;
+    
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Heebo", sans-serif;
+    padding-top: 50px;
+    margin-bottom: 15px;
+}
+.footer__content__social ul{
+    display: flex;
+    width: 100%;
+    
+}
+.footer__content__social ul li{
+    list-style-type: none;
+    margin-right: 15px;
+}
+.footer__content__social ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.footer__content__social ul li a i.fa-facebook-square:hover{
+    color: #1877f2;
+}
+.footer__content__social ul li a i.fa-instagram:hover{
+    color: #e1306c;
+    
+}
+.footer__content__social ul li a i.fa-telegram:hover{
+    color: #0088cc;
+}
+.footer__content__social ul li a i.fa-github:hover{
+    color: #ffc400;
+}
+
+/*Custom js*/
+.navbar__fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: -50px;
+    left: 0;
+    right: 0;
+    padding-bottom: 30px;
+    background: #000;
+    transform: translateY(50px);
+    transition: transform 500ms ease, background 500ms ease;
+}
+.navbar__fixed .header__logo span{
+    margin-left: 200px;
+}
+.navbar__fixed .header__link ul li:last-child{
+    margin-right: 200px;
+}
+
+
