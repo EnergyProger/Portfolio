@@ -1,3 +1,4 @@
+//For fixed navbar
 let nav_offset_top = $('.header__menu').height();
 
 function navbarFixed(){
